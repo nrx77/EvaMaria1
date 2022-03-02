@@ -18,8 +18,8 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
-@Client.on_message(filters.command("aha") & filters.incoming & ~filters.edited)
-async def startr(client, message):
+@Client.on_message(filters.command("") & filters.incoming & ~filters.edited)
+async def st(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
